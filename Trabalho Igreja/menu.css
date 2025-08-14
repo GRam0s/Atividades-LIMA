@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+        }
+
+        /* Card individual */
+    .card {
+        padding: 20px;
+        text-align: center;
+        border-left: 1px solid #eee;
+        background-color: #fff;
+        }
+
+    .card:first-child {
+        border-left: none;
+        }
+
+        /* Título */
+    .card h3 {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        padding: 10px;
+        }
+
+        /* Texto */
+    .card p {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.6;
+        }
+
+        /* Imagem */
+    .card img {
+        width: 50px;
+        margin-bottom: 15px;
+        }
+
+        /* Card ativo */
+    .card.active h3 {
+        background-color: #555566;
+        color: white;
+        }
+.container2 {
+    display: grid;
+    max-width: 400px;
+}
+ #antonio2 {
+        left: 1000px;
+    }
+    
