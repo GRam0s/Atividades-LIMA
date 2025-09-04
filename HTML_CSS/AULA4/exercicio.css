@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Verdana', sans-serif;
-    background: linear-gradient(135deg, #ff0080, #ff8c00, #00e6e6);
+    background: linear-gradient(135deg, #ff0080, rgb(99, 2, 99), #00e6e6);
     background-size: 400% 400%;
     animation: fundoAnimado 15s ease infinite;
     color: #fff;
@@ -19,7 +19,6 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Título principal */
 h1 {
     font-family: 'Impact', sans-serif;
     text-transform: uppercase;
@@ -50,4 +49,15 @@ img {
 img:hover {
     transform: scale(1.05) rotate(-1deg);
     box-shadow: 0 0 30px #ffea00, 0 0 60px #ff00ff, 0 0 90px #00e6e6;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+div > iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
