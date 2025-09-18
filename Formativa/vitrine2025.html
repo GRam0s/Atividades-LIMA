@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine 2025: Moda, Essência e Estilo em Alta Definição</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --color-primary: #1a3c40;
+            --color-secondary: #c9a878;
+            --color-accent: #6d5d6e;
+            --color-background: #f8f9fa;
+            --color-text: #2c2c2c;
+            --color-light: #ffffff;
+            --color-gray: #e9ecef;
+            --color-dark: #1a1a1a;
+            --color-success: #28a745;
+            --color-warning: #ffc107;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.12);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 16px;
+            --gradient-primary: linear-gradient(135deg, #1a3c40 0%, #2d5a5f 100%);
+            --gradient-secondary: linear-gradient(135deg, #c9a878 0%, #d4b896 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo span {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-secondary);
+            transition: var(--transition);
+        }
+
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--color-primary);
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        .icon-btn:hover {
+            background-color: var(--color-gray);
+            transform: scale(1.1);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--gradient-secondary);
+            color: var(--color-light);
+            font-size: 0.7rem;
+            font-weight: 600;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 60, 64, 0.05) 0%, rgba(201, 168, 120, 0.1) 50%, rgba(109, 93, 110, 0.05) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23c9a878" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: var(--color-text);
+            opacity: 0.8;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--gradient-primary);
+            color: var(--color-light);
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn:hover:before {
+            left: 100%;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Search Bar */
+        .search-section {
+            padding: 2rem 0;
+            background-color: var(--color-light);
+            border-bottom: 1px solid var(--color-gray);
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem 1rem 3rem;
+            border: 2px solid var(--color-gray);
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: var(--color-background);
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--color-secondary);
+            box-shadow: 0 0 0 3px rgba(201, 168, 120, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-accent);
+            font-size: 1.1rem;
+        }
+
+        /* Categories */
+        .categories {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: var(--color-primary);
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-secondary);
+            border-radius: 2px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .category-card {
+            background-color: var(--color-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+            group: hover;
+        }
+
+        .category-card:hover {
+            transform: translateY(-15px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .category-img {
+            height: 220px;
+            background: var(--gradient-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            color: var(--color-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            transition: var(--transition);
+        }
+
+        .category-card:hover .category-img::before {
+            background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+        }
+
+        .category-info {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .category-info h3 {
+            margin-bottom: 0.8rem;
+            color: var(--color-primary);
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .category-info p {
+            color: var(--color-text);
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        /* Products */
+        .products {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--color-light) 0%, var(--color-background) 100%);
+        }
+
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .filter-tab {
+            padding: 0.8rem 1.5rem;
+            background: none;
+            border: 2px solid var(--color-gray);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-tab.active,
+        .filter-tab:hover {
+            background: var(--gradient-primary);
+            color: var(--color-light);
+            border-color: transparent;
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .product-card {
+            flex: 0 0 calc(25% - 1.5rem);
+            background-color: var(--color-light);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--gradient-secondary);
+            color: var(--color-light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        .product-img {
+            height: 280px;
+            background: var(--gradient-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: var(--color-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img::before {
+            background: linear-gradient(45deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+        }
+
+        .product-info {
+            padding: 2rem;
+        }
+
+        .product-category {
+            font-size: 0.9rem;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .product-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            color: var(--color-primary);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .product-description {
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-text);
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .product-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            color: var(--color-warning);
+            font-size: 0.9rem;
+        }
+
+        .rating-text {
+            font-size: 0.9rem;
+            color: var(--color-text);
+            opacity: 0.7;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .price-original {
+            font-size: 1.1rem;
+            color: var(--color-text);
+            opacity: 0.5;
+            text-decoration: line-through;
+        }
+
+        .product-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-cart {
+            background: var(--gradient-primary);
+            color: var(--color-light);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .btn-cart:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-wishlist {
+            background: none;
+            border: 2px solid var(--color-gray);
+            color: var(--color-text);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-wishlist:hover {
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
+            background-color: rgba(201, 168, 120, 0.1);
+        }
+
+        .carousel-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .carousel-btn {
+            background: var(--gradient-primary);
+            color: var(--color-light);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+
+        .carousel-btn:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow);
+        }
+
+        .carousel-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .product-card {
+                flex: 0 0 calc(33.333% - 1.5rem);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .product-card {
+                flex: 0 0 calc(50% - 1rem);
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            
+            nav ul {
+                gap: 1.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .product-card {
+                flex: 0 0 100%;
+            }
+            
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .products-header {
+                flex-direction: column;
+                gap: 2rem;
+                align-items: stretch;
+            }
+            
+            .filter-tabs {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--color-background) 0%, var(--color-light) 100%);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--color-light);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            font-size: 4rem;
+            color: var(--color-secondary);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .testimonial-content {
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-content .stars {
+            color: var(--color-warning);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--color-text);
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-light);
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .author-info span {
+            color: var(--color-text);
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            padding: 6rem 0;
+            background: var(--gradient-primary);
+            color: var(--color-light);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="newsletter-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23newsletter-pattern)"/></svg>');
+            opacity: 0.5;
+        }
+
+        .newsletter .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .newsletter h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .newsletter p {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 0.5rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: none;
+            background: transparent;
+            color: var(--color-light);
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .newsletter-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+        }
+
+        .newsletter-btn {
+            padding: 1rem 2rem;
+            background: var(--gradient-secondary);
+            color: var(--color-light);
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .newsletter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(201, 168, 120, 0.3);
+        }
+
+        .newsletter-benefits {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .benefit i {
+            font-size: 1.2rem;
+            color: var(--color-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gradient-primary);
+            color: var(--color-light);
+            padding: 6rem 0 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="footer-pattern" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="%23c9a878" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23footer-pattern)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo i {
+            color: var(--color-secondary);
+            font-size: 1.5rem;
+        }
+
+        .footer-logo strong {
+            background: var(--gradient-secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-column p {
+            line-height: 1.6;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            position: relative;
+            font-weight: 600;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--gradient-secondary);
+            border-radius: 2px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--color-light);
+            text-decoration: none;
+            transition: var(--transition);
+            opacity: 0.9;
+            display: block;
+            padding: 0.3rem 0;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-secondary);
+            padding-left: 8px;
+            opacity: 1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--color-light);
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+
+        .social-links a:hover {
+            background: var(--gradient-secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(201, 168, 120, 0.3);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-item i {
+            color: var(--color-secondary);
+            font-size: 1.2rem;
+            margin-top: 0.2rem;
+            flex-shrink: 0;
+        }
+
+        .contact-item div {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .contact-item strong {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .contact-item span {
+            opacity: 0.9;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-bottom p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .payment-methods {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .payment-methods span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .payment-icons {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .payment-icons i {
+            font-size: 1.5rem;
+            color: var(--color-light);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .payment-icons i:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .hero {
+                padding: 4rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 0.8rem 2rem;
+                font-size: 1rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .newsletter-benefits {
+                gap: 2rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .newsletter-input, .newsletter-btn {
+                border-radius: 50px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .payment-methods {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-crown"></i>
+                    <div>Vitrine <span>2025</span></div>
+                </a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#categories">Categorias</a></li>
+                        <li><a href="#offers">Ofertas</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <button class="icon-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="icon-btn" id="user-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="icon-btn" id="cart-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">3</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Buscar produtos, marcas, categorias...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Vitrine 2025: Moda, Essência e Estilo</h1>
+                <p>Descubra a nova era do comércio elegante, onde cada produto é uma experiência sensorial e visual em alta definição. Curated collections para pessoas que valorizam qualidade e sofisticação.</p>
+                <a href="#products" class="btn">Explorar Coleção</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Categorias em Destaque</h2>
+            
+            <div class="category-grid">
+                <div class="category-card" data-category="moda">
+                    <div class="category-img">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Moda Premium</h3>
+                        <p>Roupas e acessórios com design inovador e materiais de alta qualidade para o guarda-roupa moderno.</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="perfumes">
+                    <div class="category-img">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Perfumes Exclusivos</h3>
+                        <p>Fragrâncias únicas e memoráveis, criadas por perfumistas renomados para momentos especiais.</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="bolsas">
+                    <div class="category-img">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Bolsas de Luxo</h3>
+                        <p>Peças únicas que combinam estilo, funcionalidade e artesanato de excelência.</p>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="relogios">
+                    <div class="category-img">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Relógios de Precisão</h3>
+                        <p>Timepieces de alta precisão que marcam não apenas o tempo, mas também o estilo pessoal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="products-header">
+                <h2 class="section-title" style="margin-bottom: 0;">Produtos em Destaque</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">Todos</button>
+                    <button class="filter-tab" data-filter="moda">Moda</button>
+                    <button class="filter-tab" data-filter="perfumes">Perfumes</button>
+                    <button class="filter-tab" data-filter="bolsas">Bolsas</button>
+                    <button class="filter-tab" data-filter="relogios">Relógios</button>
+                </div>
+            </div>
+            
+            <div class="carousel">
+                <div class="carousel-container" id="carousel-container">
+                    <!-- Product 1 - Moda -->
+                    <div class="product-card" data-category="moda">
+                        <div class="product-badge">Novo</div>
+                        <div class="product-img">
+                            <i class="fas fa-vest"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Moda</div>
+                            <h3 class="product-title">Blazer Premium Executive</h3>
+                            <p class="product-description">Corte impecável com tecido de alta qualidade, forro de seda e acabamentos refinados para ocasiões especiais.</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9) 127 avaliações</span>
+                            </div>
+                            <div class="product-price">
+                                R$ 599,90
+                                <span class="price-original">R$ 799,90</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-cart">Adicionar ao Carrinho</button>
+                                <button class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 - Perfume -->
+                    <div class="product-card" data-category="perfumes">
+                        <div class="product-badge">Exclusivo</div>
+                        <div class="product-img">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Perfume</div>
+                            <h3 class="product-title">Essência Celestial</h3>
+                            <p class="product-description">Fragrância exclusiva com notas amadeiradas, toques cítricos e um toque de jasmim para momentos únicos.</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8) 89 avaliações</span>
+                            </div>
+                            <div class="product-price">
+                                R$ 389,90
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-cart">Adicionar ao Carrinho</button>
+                                <button class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 - Bolsa -->
+                    <div class="product-card" data-category="bolsas">
+                        <div class="product-badge">Limitado</div>
+                        <div class="product-img">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Bolsa</div>
+                            <h3 class="product-title">Bolsa Elegance Premium</h3>
+                            <p class="product-description">Couro legítimo italiano com acabamento premium, hardware dourado e design atemporal para mulheres sofisticadas.</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9) 156 avaliações</span>
+                            </div>
+                            <div class="product-price">
+                                R$ 799,90
+                                <span class="price-original">R$ 1.199,90</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-cart">Adicionar ao Carrinho</button>
+                                <button class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 - Relógio -->
+                    <div class="product-card" data-category="relogios">
+                        <div class="product-badge">Edição Limitada</div>
+                        <div class="product-img">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Relógio</div>
+                            <h3 class="product-title">Chronograph Heritage</h3>
+                            <p class="product-description">Relógio automático com movimento suíço, caixa em aço inoxidável e pulseira de couro legítimo.</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.9) 203 avaliações</span>
+                            </div>
+                            <div class="product-price">
+                                R$ 1.299,90
+                                <span class="price-original">R$ 1.599,90</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-cart">Adicionar ao Carrinho</button>
+                                <button class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 - Moda -->
+                    <div class="product-card" data-category="moda">
+                        <div class="product-img">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Moda</div>
+                            <h3 class="product-title">Camisa Social Premium</h3>
+                            <p class="product-description">Camisa social em algodão egípcio 200 fios, corte slim e acabamentos refinados para o guarda-roupa executivo.</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.7) 94 avaliações</span>
+                            </div>
+                            <div class="product-price">
+                                R$ 299,90
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-cart">Adicionar ao Carrinho</button>
+                                <button class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 - Relógio -->
+                    <div class="product-card" data-category="relogios">
+                        <div class="product-badge">Mais Vendido</div>
+                        <div class="product-img">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Relógio</div>
+                            <h3 class="product-title">Classic Automatic</h3>
+                            <p class="product-description">Relógio automático com design clássico, mostrador minimalista e movimento de precisão suíço.</p>
+                            <div class="product-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-text">(4.8) 312 avaliações</span>
+                            </div>
+                            <div class="product-price">
+                                R$ 899,90
+                                <span class="price-original">R$ 1.199,90</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="btn-cart">Adicionar ao Carrinho</button>
+                                <button class="btn-wishlist">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button class="carousel-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Qualidade excepcional! O blazer que comprei superou todas as minhas expectativas. O atendimento foi impecável e a entrega super rápida."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Marina Silva</h4>
+                            <span>Executiva de Marketing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"A fragrância Essência Celestial é simplesmente divina! Recebo elogios sempre que uso. A embalagem também é linda, perfeita para presentear."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Mendes</h4>
+                            <span>Empresário</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Meu relógio Chronograph Heritage é uma obra de arte! A precisão é incrível e o design clássico combina com qualquer ocasião. Recomendo!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Costa</h4>
+                            <span>Arquiteta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Junte-se ao Clube de Vantagens</h2>
+            <p>Inscreva-se para receber novidades exclusivas, promoções especiais e descontos de até 30% na sua primeira compra.</p>
+            
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Seu melhor e-mail" required>
+                <button type="submit" class="newsletter-btn">Inscrever-se</button>
+            </form>
+            
+            <div class="newsletter-benefits">
+                <div class="benefit">
+                    <i class="fas fa-gift"></i>
+                    <span>Desconto de boas-vindas</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-truck"></i>
+                    <span>Frete grátis</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-star"></i>
+                    <span>Acesso exclusivo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-crown"></i>
+                        <span>Vitrine <strong>2025</strong></span>
+                    </div>
+                    <p>Moda, Essência e Estilo em Alta Definição. Descubra uma nova forma de experienciar o consumo com produtos cuidadosamente selecionados para pessoas que valorizam qualidade e sofisticação.</p>
+                    <div class="social-links">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Institucional</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Nossa história</a></li>
+                        <li><a href="#">Missão e valores</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                        <li><a href="#">Termos de uso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Atendimento</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Entregas e prazos</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                        <li><a href="#">Trocas</a></li>
+                        <li><a href="#">Rastrear pedido</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>Av. Paulista, 1000 - Bela Vista<br>São Paulo - SP, 01310-100</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Telefone</strong>
+                                <span>(11) 3000-2025</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <span>contato@vitrine2025.com.br</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Horário de atendimento</strong>
+                                <span>Seg-Sex: 9h às 18h<br>Sáb: 9h às 14h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Vitrine 2025 - Todos os direitos reservados</p>
+                    <div class="payment-methods">
+                        <span>Formas de pagamento:</span>
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fab fa-pix"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced carousel functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel-container');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const searchInput = document.querySelector('.search-input');
+            const cartCount = document.querySelector('.cart-count');
+            const addToCartButtons = document.querySelectorAll('.btn-cart');
+            const wishlistButtons = document.querySelectorAll('.btn-wishlist');
+            
+            let currentPosition = 0;
+            let currentFilter = 'all';
+            let cartItems = 3;
+            
+            // Calculate the width of one product card including gap
+            const cardStyle = window.getComputedStyle(productCards[0]);
+            const gap = parseInt(window.getComputedStyle(carousel).gap);
+            const cardWidth = productCards[0].offsetWidth + gap;
+            const visibleCards = Math.floor(carousel.offsetWidth / cardWidth);
+            const maxPosition = Math.max(0, productCards.length - visibleCards);
+            
+            // Update carousel position
+            function updateCarousel() {
+                carousel.style.transform = `translateX(${currentPosition * -cardWidth}px)`;
+                prevBtn.disabled = currentPosition <= 0;
+                nextBtn.disabled = currentPosition >= maxPosition;
+            }
+            
+            // Filter products
+            function filterProducts(filter) {
+                const cards = document.querySelectorAll('.product-card');
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fadeInUp');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                
+                // Reset carousel position
+                currentPosition = 0;
+                updateCarousel();
+            }
+            
+            // Search functionality
+            function searchProducts(query) {
+                const cards = document.querySelectorAll('.product-card');
+                const searchTerm = query.toLowerCase();
+                
+                cards.forEach(card => {
+                    const title = card.querySelector('.product-title').textContent.toLowerCase();
+                    const category = card.querySelector('.product-category').textContent.toLowerCase();
+                    const description = card.querySelector('.product-description').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || category.includes(searchTerm) || description.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fadeInUp');
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Event listeners
+            nextBtn.addEventListener('click', function() {
+                if (currentPosition < maxPosition) {
+                    currentPosition++;
+                    updateCarousel();
+                }
+            });
+            
+            prevBtn.addEventListener('click', function() {
+                if (currentPosition > 0) {
+                    currentPosition--;
+                    updateCarousel();
+                }
+            });
+            
+            // Filter tabs
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    currentFilter = this.dataset.filter;
+                    filterProducts(currentFilter);
+                });
+            });
+            
+            // Search input
+            searchInput.addEventListener('input', function() {
+                const query = this.value.trim();
+                if (query.length > 0) {
+                    searchProducts(query);
+                } else {
+                    filterProducts(currentFilter);
+                }
+            });
+            
+            // Add to cart functionality
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartItems++;
+                    cartCount.textContent = cartItems;
+                    
+                    // Animation
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                    
+                    // Show notification
+                    showNotification('Produto adicionado ao carrinho!');
+                });
+            });
+            
+            // Wishlist functionality
+            wishlistButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (icon.classList.contains('far')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                        this.style.color = '#e74c3c';
+                        showNotification('Adicionado aos favoritos!');
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                        this.style.color = '';
+                        showNotification('Removido dos favoritos!');
+                    }
+                });
+            });
+            
+            // Category cards
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    filterTabs.forEach(tab => {
+                        tab.classList.remove('active');
+                        if (tab.dataset.filter === category) {
+                            tab.classList.add('active');
+                        }
+                    });
+                    currentFilter = category;
+                    filterProducts(category);
+                    
+                    // Scroll to products section
+                    document.getElementById('products').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('nav a[href^="#"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Notification function
+            function showNotification(message) {
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: var(--gradient-primary);
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    border-radius: 8px;
+                    box-shadow: var(--shadow);
+                    z-index: 10000;
+                    animation: slideInRight 0.3s ease-out;
+                `;
+                notification.textContent = message;
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideOutRight 0.3s ease-out';
+                    setTimeout(() => {
+                        document.body.removeChild(notification);
+                    }, 300);
+                }, 3000);
+            }
+            
+            // Initialize
+            updateCarousel();
+            
+            // Add CSS for notifications
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes slideInRight {
+                    from { transform: translateX(100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
+                @keyframes slideOutRight {
+                    from { transform: translateX(0); opacity: 1; }
+                    to { transform: translateX(100%); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
